@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(cors({
-    origin: 'http://localhost:5173'
+    origin: ['http://localhost:5173','https://frontend-kinetics-pro-test.vercel.app/']
   }));
 // Use the form middleware
 app.use('/api', formMiddleware); // Prefix all routes in the formMiddleware with /api
