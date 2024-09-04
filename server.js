@@ -16,3 +16,5 @@ app.use('/api', formMiddleware); // Prefix all routes in the formMiddleware with
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+module.exports = app;
